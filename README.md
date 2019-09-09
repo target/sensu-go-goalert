@@ -4,12 +4,15 @@ Sensu Go event handler that will create and close alerts in [GoAlert](https://gi
 
 ## Installation
 
-Download the latest version of the sensu-go-goalert from releases, or create an executable script from this source.
+Download the latest version of the sensu-goalert-handler from releases, or create an executable script from this source.
 
-Run `go get github.com/target/sensu-go-goalert/...`
+Run  
+`go get github.com/target/sensu-go-goalert/...`  
+to install the `sensu-goalert-handler` binary into your GOPATH automatically.
 
-From the local path of the sensu-go-goalert repository:
-`go build ./cmd/sensu-goalert-handler`
+Or, run  
+`go build ./cmd/sensu-goalert-handler`  
+to build the `sensu-goalert-handler` binary into the current directory.
 
 ## Configuration
 
