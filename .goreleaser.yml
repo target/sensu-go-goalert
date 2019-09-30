@@ -25,6 +25,7 @@ archive:
   format: tar.gz
   files:
     - README.md
+    - LICENSE.md
 
   # You can change the name of the GitHub release.
   # This is parsed with the Go template engine and the following variables
