@@ -24,7 +24,6 @@ checksum:
 archive:
   format: tar.gz
   files:
-    - LICENSE
     - README.md
     - CHANGELOG.md
 
