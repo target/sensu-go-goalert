@@ -1,0 +1,18 @@
+---
+description: "#{repo}"
+builds:
+- platform: "linux"
+  arch: "amd64"
+  asset_filename: "#{repo}_#{version}_linux_amd64.tar.gz"
+  sha_filename: "#{repo}_#{version}_sha512-checksums.txt"
+  filter:
+  -  "entity.system.os == 'linux'"
+  -  "entity.system.arch == 'amd64'"
+
+- platform: "linux"
+  arch: "arm64"
+  asset_filename: "#{repo}_#{version}_linux_arm64.tar.gz"
+  sha_filename: "#{repo}_#{version}_sha512-checksums.txt"
+  filter:
+  -  "entity.system.os == 'linux'"
+  -  "entity.system.arch == 'arm64'"
