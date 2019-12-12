@@ -9,14 +9,13 @@ Sensu Go event handler that will create and close alerts in [GoAlert](https://gi
 
 Assets are the best way to make use of this plugin. If you're not using an asset, please consider doing so! If you're using sensuctl 5.13 or later, you can use the following command to add the asset: 
 
-`sensuctl asset add target/sensu-go-goalert:0.0.5`
+`sensuctl asset add target/sensu-go-goalert:0.0.6`
 
 If you're using an earlier version of sensuctl, you can find the asset on the [Bonsai Asset Index](https://bonsai.sensu.io/assets/target/sensu-go-goalert).
 
 ### Examples
 
-Example handler config:
-
+Example Sensu Go handler definition (named **goalert-handler.json**):
 ```json
 {
   "type": "Handler",
@@ -27,21 +26,21 @@ Example handler config:
   },
   "spec": {
     "type": "pipe",
-    "command": "sensu-goalert-handler",
+    "command": "sensu-go-goalert",
     "env_vars": ["GOALERT_URL=ENTER_GENERIC_INTEGRATION_KEY_URL_HERE"],
     "filters": [
       "is_incident",
       "not_silenced"
       ],
     "handlers": [],
-    "runtime_assets": [],
+    "runtime_assets": ["target/sensu-go-goalert"],
     "timeout": 15
   }
 }
 ```
+**sensuctl create -f goalert-handler.json**
 
-Example check config:
-
+Example Sensu Go check definition:
 ```json
 {
   "api_version": "core/v2",
