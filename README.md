@@ -9,7 +9,7 @@ Sensu Go event handler that will create and close alerts in [GoAlert](https://gi
 
 Assets are the best way to make use of this plugin. If you're not using an asset, please consider doing so! If you're using sensuctl 5.13 or later, you can use the following command to add the asset: 
 
-`sensuctl asset add target/sensu-go-goalert:VERSION`
+`sensuctl asset add target/sensu-go-goalert:0.0.5`
 
 If you're using an earlier version of sensuctl, you can find the asset on the [Bonsai Asset Index](https://bonsai.sensu.io/assets/target/sensu-go-goalert).
 
