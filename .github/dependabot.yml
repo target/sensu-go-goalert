@@ -155,3 +155,4 @@ updates:
       timezone: "Asia/Kolkata"
     allow:
       - dependency-type: "direct"
+
