@@ -1,3 +1,3 @@
 module github.com/target/sensu-go-goalert
 
-go 1.12
+go 1.20

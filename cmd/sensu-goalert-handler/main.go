@@ -6,7 +6,7 @@ import (
 	"encoding/json"
 	"flag"
 	"fmt"
-	"io/ioutil"
+	"io"
 	"log"
 	"net/http"
 	"net/url"
@@ -59,7 +59,7 @@ func main() {
 	urlStr := flag.String("url", os.Getenv("GOALERT_URL"), "")
 	flag.Parse()
 
-	data, err := ioutil.ReadAll(os.Stdin)
+	data, err := io.ReadAll(os.Stdin)
 	if err != nil {
 		log.Fatal("read stdin:", err)
 	}
