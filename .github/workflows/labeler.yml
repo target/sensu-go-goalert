@@ -27,14 +27,5 @@ jobs:
             Note this PR might be rejected due to its size.
           files_to_ignore: |
             "*.lock"
-            "graphql2/generated.go"
-            "graphql2/maplimit.go"
-            "graphql2/mapconfig.go"
-            "pkg/sysapi/*.pb.go"
-            "swo/swodb/*.go"
-            "web/src/*.d.ts"
-            "Makefile.binaries.mk"
-            "gadb/*.go"
-            "migrate/schema.sql"
             "go.mod"
             "go.sum"
