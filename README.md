@@ -1,5 +1,5 @@
 # Sensu Go GoAlert Handler
-[![Bonsai Asset Badge](https://img.shields.io/badge/Sensu%20Go%20Goalert%20Handler-Download%20Me-brightgreen.svg?colorB=89C967&logo=sensu)](https://bonsai.sensu.io/assets/target/sensu-go-goalert) [![TravisCI Build Status](https://travis-ci.org/target/sensu-go-goalert.svg?branch=master)](https://travis-ci.org/target/sensu-go-goalert)
+[![Bonsai Asset Badge](https://img.shields.io/badge/Sensu%20Go%20Goalert%20Handler-Download%20Me-brightgreen.svg?colorB=89C967&logo=sensu)](https://bonsai.sensu.io/assets/target/sensu-go-goalert) 
 
 Sensu Go event handler that will create and close alerts in [GoAlert](https://github.com/target/goalert).
 
